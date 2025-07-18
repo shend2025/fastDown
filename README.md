@@ -10,7 +10,7 @@ All configuration items are in the `config.py` file and can be modified as neede
 
 ### Configuration Items Description
 
-- `DOWNLOAD_BASE_URL`: Base download URL, used for generating download links and QR codes
+- `FILE_SHARE_URL`: Base download URL, used for generating download links and QR codes
 - `DOWNLOAD_WORKERS`: Number of concurrent download threads (default 5 threads)
 - `DESTINATION_DIR`: File storage directory
 - `TEMP_DIR`: Temporary file directory
@@ -25,8 +25,8 @@ All configuration items are in the `config.py` file and can be modified as neede
 ### Example Configuration
 
 ```python
-# Modify download base URL
-DOWNLOAD_BASE_URL = "https://your-domain.com/downloads/"
+# Modify file share base URL
+FILE_SHARE_URL = "https://your-domain.com/downloads/"
 
 # Increase concurrent threads to 10
 DOWNLOAD_WORKERS = 10
