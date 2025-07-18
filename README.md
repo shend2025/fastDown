@@ -1,7 +1,8 @@
 # Download Tool
 
+类似迅雷的多线程下载器，适合Mac/Linux命令行，依赖基础的python环境，适合企业内部轻量化部署，加快公网资源下载速度
 This is a file download tool that supports multi-threaded concurrent downloads, with download history recording and QR code generation capabilities.
-This tool likes Xunlei downloader in windows, smart for Mac/Liunx system etc.
+This tool likes Xunlei download in windows, smart for Mac/Liunx system etc.
 
 ## Configuration File Description
 
