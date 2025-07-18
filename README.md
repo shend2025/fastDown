@@ -1,7 +1,7 @@
 # Download Tool
 
 This is a file download tool that supports multi-threaded concurrent downloads, with download history recording and QR code generation capabilities.
-This tool likes Xunlei downloader in windows
+This tool likes Xunlei downloader in windows, smart for Mac/Liunx system etc.
 
 ## Configuration File Description
 
