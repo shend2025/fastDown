@@ -1,6 +1,7 @@
-# Download Proxy Tool
+# Fast Download Tool
 
 This is a file download tool that supports multi-threaded concurrent downloads, with download history recording and QR code generation capabilities.
+This tool is useful on Windows/Linux/Mac. Tool depends on python env.
 
 ## Configuration File Description
 
