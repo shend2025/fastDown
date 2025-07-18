@@ -1,0 +1,4 @@
+Flask==2.3.3
+requests>=2.25.1
+tqdm>=4.60.0
+qrcode>=7.3 
