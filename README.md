@@ -1,7 +1,7 @@
-# Fast Download Tool
+# Download Tool
 
 This is a file download tool that supports multi-threaded concurrent downloads, with download history recording and QR code generation capabilities.
-This tool is useful on Windows/Linux/Mac. Tool depends on python env.
+This tool likes Xunlei downloader in windows
 
 ## Configuration File Description
 
@@ -38,11 +38,11 @@ DESTINATION_DIR = "/var/www/downloads"
 
 ```bash
 # Download file
-python muti_down.py <URL> [new filename]
+python download.py <URL> [new filename]
 
 # Examples
-python muti_down.py https://example.com/file.zip
-python muti_down.py https://example.com/file.zip myfile
+python download.py https://example.com/file.zip
+python download.py https://example.com/file.zip myfile
 ```
 
 ## Features
@@ -52,4 +52,92 @@ python muti_down.py https://example.com/file.zip myfile
 - Download history recording
 - Automatic download link generation
 - Automatic QR code generation
-- File deduplication (avoid duplicate downloads) 
+- File deduplication (avoid duplicate downloads)
+
+## Installation
+
+### Python Environment Setup
+
+#### Windows
+
+1. **Download Python:**
+   - Visit [python.org](https://www.python.org/downloads/)
+   - Download Python 3.12 (recommended)
+   - Run the installer and check "Add Python to PATH"
+
+2. **Verify Installation:**
+   ```cmd
+   python --version
+   pip --version
+   ```
+
+#### macOS
+
+1. **Using Homebrew (Recommended):**
+   ```bash
+   # Install Homebrew if not installed
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   
+   # Install Python
+   brew install python
+   ```
+
+2. **Using Official Installer:**
+   - Download from [python.org](https://www.python.org/downloads/)
+   - Run the installer package
+
+3. **Verify Installation:**
+   ```bash
+   python3 --version
+   pip3 --version
+   ```
+
+#### Linux (Ubuntu)
+
+1. **Install Python:**
+   ```bash
+   sudo apt update
+   sudo apt install python3 python3-pip
+   ```
+
+2. **Verify Installation:**
+   ```bash
+   python3 --version
+   pip3 --version
+   ```
+
+#### Linux (RedHat/CentOS)
+
+1. **Install Python:**
+   ```bash
+   sudo yum install python3 python3-pip
+   # or for newer versions
+   sudo dnf install python3 python3-pip
+   ```
+
+2. **Verify Installation:**
+   ```bash
+   python3 --version
+   pip3 --version
+   ```
+
+### Installing Dependencies
+
+1. **Navigate to the project directory:**
+   ```bash
+   cd fastDown
+   ```
+
+2. **Install required packages:**
+   ```bash
+   # Using pip
+   pip install -r requirements.txt
+   
+   # Or using pip3 (if you have both Python 2 and 3)
+   pip3 install -r requirements.txt
+   ```
+
+3. **Verify installation:**
+   ```bash
+   python -c "import requests, qrcode; print('Dependencies installed successfully!')"
+   ``` 
