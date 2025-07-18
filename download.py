@@ -10,7 +10,7 @@ import csv
 import datetime
 import qrcode
 from config import (
-    DOWNLOAD_BASE_URL, 
+    FILE_SHARE_URL, 
     DOWNLOAD_WORKERS, 
     DESTINATION_DIR, 
     TEMP_DIR, 
@@ -228,7 +228,7 @@ def main():
         else:
             # Compatible with old version, regenerate download link
             filename = os.path.basename(existing_file)
-            existing_download_url = DOWNLOAD_BASE_URL + filename
+            existing_download_url = FILE_SHARE_URL + filename
             print(f"Download link: {existing_download_url}")
         
         if existing_qrcode_path:
@@ -261,7 +261,7 @@ def main():
         final_path = move_to_destination(temp_file_path)
         print(f"Download completed: {final_path}")
 
-        download_url = DOWNLOAD_BASE_URL + new_filename
+        download_url = FILE_SHARE_URL + new_filename
         print("Download link: "+ download_url)
         
      
@@ -273,7 +273,7 @@ def main():
         shutil.copy(new_filename+"qrcode.png", qrcode_path)
         # Delete temporary QR code image
         os.remove(new_filename+"qrcode.png")
-        qrcode_url = DOWNLOAD_BASE_URL + new_filename + "qrcode.png"
+        qrcode_url = FILE_SHARE_URL + new_filename + "qrcode.png"
         print("QR code path: "+qrcode_url)
         
         # Save download history, including download link and QR code path
