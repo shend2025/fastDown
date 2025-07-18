@@ -1,7 +1,8 @@
-# Download configuration file
+# Download proxy configuration file
 
-# Download base URL, used for generating download links and QR codes
-DOWNLOAD_BASE_URL = "http://xxxxx"
+# base URL, used for generating share links and QR codes
+# for example, add file download page by nginx, and set the base URL to the nginx server address
+FILE_SHARE_URL = "http://xxxxx"
 
 # Number of concurrent download threads
 DOWNLOAD_WORKERS = 5
